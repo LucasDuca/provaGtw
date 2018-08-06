@@ -12,6 +12,7 @@ using duca_gateway.Utility;
 using System.Text;
 using duca_gateway.Mocks.ClearSale;
 using System.Web;
+using Newtonsoft.Json;
 
 namespace duca_gateway.Repository
 {
@@ -22,7 +23,9 @@ namespace duca_gateway.Repository
         public TransacaoRepository(duca_gtwContext ctx)
         {
             _ctx = ctx;
-            client.BaseAddress = new Uri(@"http://localhost:4540/");
+              
+            //client.BaseAddress = new Uri(@"" + baseUrl + "/");
+            client.BaseAddress = new Uri(@"http://localhost:4541/");
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
@@ -31,7 +34,7 @@ namespace duca_gateway.Repository
         {
             await Task.Delay(3000);
             //JavaScriptSerializer JSserializer = new JavaScriptSerializer();
-            StringContent httpConent = new StringContent(JsonConverter.Serialize<Stone>(stn), Encoding.UTF8, "application/json");
+            StringContent httpConent = new StringContent(JsonConverterOld.Serialize<Stone>(stn), Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.PostAsync("api/mockStone", httpConent);
 
             if (response.IsSuccessStatusCode)
@@ -40,7 +43,8 @@ namespace duca_gateway.Repository
                 Stone stn_new = new Stone();
                 //JsonConverter.Serialize()
                 obj = obj.Replace(@"\", " ");
-                stn_new = JsonConverter.Deserialize<Stone>(obj);
+                
+                stn_new = JsonConvert.DeserializeObject<Stone>(obj);
                 return stn_new;
             }
             else
@@ -53,17 +57,17 @@ namespace duca_gateway.Repository
         {
             await Task.Delay(3000);
             //JavaScriptSerializer JSserializer = new JavaScriptSerializer();
-            StringContent httpConent = new StringContent(JsonConverter.Serialize<Payment>(pay), Encoding.UTF8, "application/json");
+            StringContent httpConent = new StringContent(JsonConverterOld.Serialize<Payment>(pay), Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.PostAsync("api/clearSale", httpConent);
 
             if (response.IsSuccessStatusCode)
             {
                 var obj = await response.Content.ReadAsStringAsync();
                 OrderStatus os = new OrderStatus();
-                obj = obj.ToString();
-                obj = obj.Replace(@"\", "");
-                os = JsonConverter.Deserialize<OrderStatus>(obj);
-                
+                os = JsonConvert.DeserializeObject<OrderStatus>(obj);
+
+
+
                 return os;
             }
             else

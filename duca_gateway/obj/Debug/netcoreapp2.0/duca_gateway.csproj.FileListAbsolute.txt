@@ -11,3 +11,16 @@ C:\Users\LucasESilsa\source\repos\duca_gateway\duca_gateway\bin\Debug\netcoreapp
 C:\Users\LucasESilsa\source\repos\duca_gateway\duca_gateway\bin\Debug\netcoreapp2.0\duca_gateway.pdb
 C:\Users\LucasESilsa\source\repos\duca_gateway\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.dll
 C:\Users\LucasESilsa\source\repos\duca_gateway\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.pdb
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\bin\Debug\netcoreapp2.0\duca_gateway.dll.config
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\bin\Debug\netcoreapp2.0\duca_gateway.deps.json
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\bin\Debug\netcoreapp2.0\duca_gateway.runtimeconfig.json
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\bin\Debug\netcoreapp2.0\duca_gateway.runtimeconfig.dev.json
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\bin\Debug\netcoreapp2.0\duca_gateway.dll
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\bin\Debug\netcoreapp2.0\duca_gateway.pdb
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.dll.config
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.csproj.CoreCompileInputs.cache
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.AssemblyInfoInputs.cache
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.AssemblyInfo.cs
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.dll
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.pdb
+C:\Users\lucasduca\Desktop\duca_gtw\provaGtw\duca_gateway\obj\Debug\netcoreapp2.0\duca_gateway.csprojResolveAssemblyReference.cache

@@ -71,10 +71,8 @@ namespace duca_gateway.Controllers
                     }
 
                     Stone adiquirenteStone = await AdiquirenteAsync(loja_config, "visa");
-                    if (adiquirenteStone == null)
+                    if (adiquirenteStone.ErrorReport != null)
                         return BadRequest("Adiquirente Inválido");
-                            // return new HttpActionResult(HttpStatusCode.BadRequest, adiquirenteStone);
-                    //return ResponseMessage(Request.CreateResponse(HttpStatusCode.BadRequest, adiquirenteStone));
                 }
                 else
                 {

@@ -1,4 +1,4 @@
-# Este projeto foi desenvolvido usando tecnologia NetCore 2.0.
+# Este projeto foi desenvolvido usando tecnologia NetCore 2.0. 
 <br>
 Utilizaremos o Swagger para realizar as operações de transações e consultas.<br>
 

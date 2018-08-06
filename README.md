@@ -1,10 +1,10 @@
-# Este projeto foi desenvolvido usando tecnologia NetCore 2.0. 
+# Este projeto foi desenvolvido utilizando NetCore 2.0. 
 <br>
 Utilizaremos o Swagger para realizar as operações de transações e consultas.<br>
 
 Requisitos<br> 
 Mysql Server > 5.0<br>
-Dotnet Ef <br>
+<a href="https://download.microsoft.com/download/4/0/9/40920432-3302-47a8-b13c-bbc4848ad114/dotnet-sdk-2.1.302-win-x64.exe">Dotnet Ef</a> <br>
 
 Modelo Mer<br>
 ![alt text](https://imageshack.com/a/img923/507/3Hrbq5.png)
@@ -12,10 +12,10 @@ Modelo Mer<br>
 
 [Configuração]<br>
 1° - Abrir o powershell<br>
-2° - cd c:/seu_caminho_do_clone/<br>
+2° - cd c:/seu_caminho_do_clone/diretorio_do_csproj<br>
 3° - No diretório da aplicação executar o comando para gerar o banco de dados <br>
 
-dotnet ef database update -s  ./../duca_gateway<br>
+<b>dotnet ef database update -s  ./../duca_gateway</b><br>
 
 Database Migrada[ok]!<br>
 
@@ -26,11 +26,11 @@ execute os seguintes comandos para iniciar a aplicação<br>
   dotnet run
 </b>
 <br>
-Exibira<br>
+Exibira seu endereço de acesso<br>
 ![alt text](https://imagizer.imageshack.com/v2/1024x768q90/923/s7TmNu.png)
 
-Copie seu endereço de acesso e cole no navegador<br>
-<b>http://seu_endereço_de_acesso:porta/swagger/</b><br>
+Copie o endereço de acesso e cole no navegador<br>
+<b>http://localhost:4541/swagger/index.html</b><br>
 
 
 Usaremos o swagger para adicionar o Lojista e sua respectiva configuração<br>
@@ -82,6 +82,9 @@ Obs: os campos ruleVisa e ruleMaster definem por qual adiquirente vai passar a t
 nos campos stone e cielo definimos qual adiquirente esta habilitado S(im) ou N(ão) ) <br>
 
 Feita a configuração vamos adicionar Transações:
+
+Para simular um erro de Sales Force, basta deixar o parâmetro CreditCard vazio<br>
+Para simular um erro do adiquirente, basta deixar o merchant-key(na configuração do banco de dados...) vazio<br>
 
 Copiar JSON e substituir:<br>
 <br>
